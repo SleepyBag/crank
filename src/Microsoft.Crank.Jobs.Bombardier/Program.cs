@@ -68,24 +68,24 @@ namespace Microsoft.Crank.Jobs.Bombardier
             args = argsList.ToArray();
 
             string bombardierUrl = null;
-            string bombardierVersion = "1.2.4";
+            string bombardierVersion = "1.2.3";
 
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                bombardierUrl = "https://github.com/codesenberg/bombardier/releases/download/v1.2.4/bombardier-windows-amd64.exe";
+                bombardierUrl = "https://github.com/codesenberg/bombardier/releases/download/v1.2.3/bombardier-windows-amd64.exe";
             }
             else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
             {
                 switch (RuntimeInformation.ProcessArchitecture)
                 {
-                    case Architecture.Arm64 : bombardierUrl = "https://github.com/codesenberg/bombardier/releases/download/v1.2.4/bombardier-linux-arm64"; break;
-                    case Architecture.Arm : bombardierUrl = "https://github.com/codesenberg/bombardier/releases/download/v1.2.4/bombardier-linux-arm"; break;
-                    default: bombardierUrl = "https://github.com/codesenberg/bombardier/releases/download/v1.2.4/bombardier-linux-amd64"; break;
+                    case Architecture.Arm64 : bombardierUrl = "https://github.com/codesenberg/bombardier/releases/download/v1.2.3/bombardier-linux-arm64"; break;
+                    case Architecture.Arm : bombardierUrl = "https://github.com/codesenberg/bombardier/releases/download/v1.2.3/bombardier-linux-arm"; break;
+                    default: bombardierUrl = "https://github.com/codesenberg/bombardier/releases/download/v1.2.3/bombardier-linux-amd64"; break;
                 }
             }
             else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
             {
-                bombardierUrl = "https://github.com/codesenberg/bombardier/releases/download/v1.2.4/bombardier-darwin-amd64";
+                bombardierUrl = "https://github.com/codesenberg/bombardier/releases/download/v1.2.3/bombardier-darwin-amd64";
             }
             else
             {
