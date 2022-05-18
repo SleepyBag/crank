@@ -108,7 +108,7 @@ namespace H2LoadClient
             BenchmarksEventSource.Register("h2load/latency/mean;http/latency/mean", Operations.Max, Operations.Sum, "Mean latency (ms)", "Mean latency (ms)", "n2");
             BenchmarksEventSource.Register("h2load/latency/max;http/latency/max", Operations.Max, Operations.Sum, "Max latency (ms)", "Max latency (ms)", "n2");
 
-            BenchmarksEventSource.Register("h2load/rps/mean;http/rps/mean", Operations.Sum, Operations.Sum, "RPS", "Request per second", "n0");
+            BenchmarksEventSource.Register("h2load/rps/mean;http/rps/mean", Operations.Max, Operations.Sum, "RPS", "Request per second", "n0");
             BenchmarksEventSource.Register("h2load/rps/max;http/rps/max", Operations.Max, Operations.Sum, "Max RPS", "RPS: max", "n0");
             BenchmarksEventSource.Register("h2load/raw", Operations.All, Operations.All, "Raw results", "Raw results", "object");
 
