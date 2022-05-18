@@ -8,7 +8,7 @@
 jobs:
   h2LoadClient:
     source:
-      repository: https://github.com/SleepyBag/crank.git
+      repository: https://github.com/SleepyBag/sleepybag-crank.git
       branchOrCommit: main
       project: src/Microsoft.Crank.Jobs.H2Load/Microsoft.Crank.Jobs.H2Load.csproj
       sourceKey: h2load
