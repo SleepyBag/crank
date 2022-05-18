@@ -59,7 +59,7 @@ namespace H2LoadClient
                 Headers = new Dictionary<string, string>();
                 foreach (var header in optionHeaders.ParsedValues)
                 {
-                    var headerParts = header.Split('=');
+                    var headerParts = header.Split(':');
                     var key = headerParts[0];
                     var value = headerParts[1];
                     Headers.Add(key, value);
