@@ -142,7 +142,7 @@ namespace H2LoadClient
             BenchmarksEventSource.Measure("h2load/latency/max;http/latency/max", maxLatency);
 
             BenchmarksEventSource.Measure("h2load/rps/mean;http/rps/mean", rps);
-            BenchmarksEventSource.Measure("h2load/rps/max;http/rps/max", rps);
+            // BenchmarksEventSource.Measure("h2load/rps/max;http/rps/max", rps);
 
             BenchmarksEventSource.Measure("h2load/raw", Output);
         }
